@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<title><%- title %></title>
 
-	<link rel="stylesheet" type="text/css" href="/public/css/style.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -36,29 +35,18 @@
 	</script>
 </head>
 <body>
-	<div class="logo"></div>
-
-	<h2 class="title">LECTURE CONNECT</h2>
-
- <div id="main">
+<h2 class="title">LECTURE CONNECT</h2>
  	<br>
-		<div id="navigation">
-
-			<img src="../css/wl.svg" class="userPic">
+		<div>
 			<h3 class="userName"><%- user.fullname %></h3>
 			<a href="/user"><button class="nav">Home</button></a>
 			<a href="/user/gethelp"><button class="nav">Lecture Room</button></a>
-			<a href="/logout"><button class="nav">Logout</button></a>			
+			<a href="/logout"><button class="nav">Logout</button></a>
 		</div>
-		<br>
-		<br>
-		<br>
-		
 	<div id="platform">
 		<p>
 			Hello <%- user.fullname %>, Welcome to Lecture Connect.
 		</p>
 	</div>
-
 </body>
 </html>
